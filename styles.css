@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root{
+    --orangered: #ff4800;
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+}
+header .navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+header .navBar .fa-slack{
+    color: var(--orangered);
+    font-size: 20px;
+}
+header .navBar .fa-bars{
+    color: var(--light-color);
+    font-size: 20px;
+}
+.intro-container{
+    min-height: 40vh;
+    background: #2221211c;
+}
+.intro-container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro-container .image img{
+    height: 35rem;
+    width: 35rem;
+    object-fit: cover;
+}
+.intro-container .info{
+    padding: 4rem;
+    margin-top: 1rem;
+}
+.intro-container .info h1{
+    font-size: 28px;
+    color: var(--black);
+}
+.intro-container .info p{
+    font-size: 16px;
+    color: var(--light-color);
+    margin-top: 7px;
+}
+.intro-container .info p span{
+    text-decoration: underline;
+    color: var(--orangered);
+}
+.intro-container .info .fa-chevron-right{
+    color: var(--orangered);
+    padding: 5px;
+}
+
+.intro-container .info .best-design{
+    padding-top: 10px;
+}
+.intro-container .info .pg{
+    font-size: 19px;
+}
+.intro-container .info .btn{
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;padding-left: 15px;
+    border: none;
+    border-radius: 50px;
+    color: wheat;
+    font-size: 12px;
+    background: var(--orangered);
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    min-height: 87vh;
+    background: var(--orangered);
+    text-align: center;
+    justify-content: center;
+    padding: 4rem;
+}
+.main .sub-main-1{
+    font-size: 12px;
+    color: #fff;
+}
+.main .icons{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.main .icons .icon{
+    width: 130px;
+    height: 100px;
+    background: whitesmoke;
+    margin-right: 3px;
+}
+.main .icons .icon i{
+   margin: 20px;
+   font-size: 40px;
+   color: #ffa600b0;
+}
+.main .icons .icon .de{
+    color: var(--light-color);
+    font-size: 12px;
+}
+.product h1{
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+.product p{
+    color: wheat;
+    font-size: 12px;
+    line-height: 1rem;
+}
+.grid-container{
+    display: block;
+    margin-top: -120px;
+    background: #2221211c;
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid-container .grid-item img{
+    width: 15rem;
+    height: 15rem;
+    padding: .5rem;
+}
+.view{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid-container p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: .8rem;
+    color: var(--light-color);
+}
+.grid-container .btn{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+    color: wheat;
+    background: var(--orangered);
+    margin-bottom: .8rem;
+}
+.grid-container-1{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    background: #2221211c;
+}
+.grid-container-1 .row-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.grid-container-1 .row-1 .info-1{
+    width: 55%;
+}
+.grid-container-1 .row-1 .info-1 .btn{
+    margin-top: 2rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: var(--orangered);
+    color: wheat;
+    border-radius: 50px;
+    border: none;
+}
+.grid-container-1 .row-1 .text-1{
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.grid-container-1 .row-1 .text-2{
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-top: .5rem;
+}
+.grid-container-1 .row-1 .text-3{
+    color: var(--light-color);
+    font-size: 13px;
+}
+.grid-container-1 .row-1 .image .plan-1, .plan-2{
+   display: flex;
+}
+.grid-container-1 .row-1 .image .plan-1, .plan-2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container-1 .row-1 .image .plan-1 .consultation{
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 23px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #e0e0e0;
+    border: solid 2px #e0e0e0;
+    height: 30vh;
+    display: block;
+    margin: 1rem;
+}
+.grid-container-1 .row-1 .image .plan-1 .planning{
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 23px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #e0e0e0;
+    border: solid 2px #e0e0e0;
+    height: 30vh;
+    display: block;
+    padding: 1rem;
+}
+.grid-container-1 .row-1 .image .plan-2 .accessories{
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 23px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #e0e0e0;
+    border: solid 2px #e0e0e0;
+    height: 30vh;
+    display: block;
+    margin: 1rem;
+}
+.grid-container-1 .row-1 .image .plan-2 .living-room{
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 23px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #e0e0e0;
+    border: solid 2px #e0e0e0;
+    height: 30vh;
+    display: block;
+}
+.plan-1 .consultation h1{
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--light-color);
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.plan-1 .planning h1{
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--light-color);
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.plan-1 i{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    margin-top: 8px;
+    color: wheat;
+    background: var(--orangered);
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+.plan-2 .accessories h1{
+    font-size: 22px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--light-color);
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.plan-2 .living-room h1{
+    font-size: 22px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--light-color);
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.plan-2 i{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    margin-top: 8px;
+    color: wheat;
+    background: var(--orangered);
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+.services{
+    width: 100%;
+    background: var(--orangered);
+}
+.services .building{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.services .building .heading{
+    padding: 2rem;
+    color: wheat;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.services .building .build{
+    color: #ffffff8a;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+.services .building .text{
+    color: wheat;
+    font-size: 14px;
+    line-height: 1.2rem;
+    padding-bottom: 1rem;
+}
+.services .building .btn{
+    border: solid 1px wheat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: transparent;
+    color: wheat;
+    font-size: 14px;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+.high{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #2221211c;
+}
+.high .interior h1{
+    font-size: 16px;
+    padding: 2rem;
+    color: var(--black);
+}
+.high .count{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.high .count .count-1{
+    background: var(--orangered);
+    padding: 1rem;
+    border-radius: 70px;
+}
+.high .count .count-1 h1{
+    color: whitesmoke;
+    font-size: 13px;
+}
+.high .count .count-2{
+    background: var(--orangered);
+    padding: 1rem;
+    border-radius: 50px;
+}
+.high .count .count-2 h1{
+    color: whitesmoke;
+    font-size: 12px;
+}
+.high .count .count-3{
+    background: var(--orangered);
+    padding: 1rem;
+    border-radius: 50px;
+}
+.high .count .count-3 h1{
+    color: whitesmoke;
+    font-size: 12px;
+}
+.high .count .count-4{
+    background: var(--orangered);
+    padding: 1rem;
+    border-radius: 50px;
+}
+.high .count .count-4 h1{
+    color: whitesmoke;
+    font-size: 13px;
+}
+.high .highlight{
+    display: flex;
+    justify-content: space-around;
+}
+.high .highlight p{
+    font-size: 12px;
+    color: var(--light-color);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.high .highlight .highlight-4{
+    margin-right: .8rem;
+}
+.high .highlight .highlight-3{
+    margin-right: 1rem;
+}
+.good-company{
+    background: var(--orangered);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.good-company .good h1{
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 2rem;
+}
+.good-company .follow{
+    display: flex;
+    justify-content: center;
+}
+.good-company .follow .f1{
+   padding: 1rem;
+   color: whitesmoke;
+   font-size: 14px;
+}
+.good-company .follow .f2{
+   padding: 1rem;
+   color: wheat;
+   font-size: 14px;
+}
+.good-company .follow .f3{
+    padding: 1rem;
+    color: wheat;
+    font-size: 14px
+}
+.good-company .follow .f4{
+    padding: 1rem;
+    color: wheat;
+    font-size: 14px
+}
+.grid-container-2{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    margin: 40px;
+    background: white;
+    box-shadow: 3px 3px 3px 3px #e0e0e0;
+    border: solid 2px #e0e0e0;
+    border-radius: 10px;
+}
+.grid-container-2 h2{
+    color: var(--black);
+    font-size: 16px;
+    padding-bottom: .7rem;
+}
+.grid-container-2 p{
+    color: var(--light-color);
+    font-size: 12px;
+}
+.grid-container-3 h3{
+    color: var(--black);
+    font-size: 16px;
+    padding-bottom: .7rem;
+}
+.grid-container-3 input{
+    margin-top: 1rem;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: var(--light-color);
+    border: none;
+    background: #c4bfbf7a;
+    font-size: 12px;
+    padding-right: 35px;
+    padding-left: 5px;
+    border-radius: 10px;
+    outline: none;
+}
+.grid-container-3 .btn{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: wheat;
+    font-size: 12px;
+    background: var(--orangered);
+}
+.grid-container-4{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    margin: 40px;
+    background: var(--orangered);
+    box-shadow: 3px 3px 3px 3px #e0e0e0;
+    border: solid 2px #e0e0e0;
+    border-radius: 10px;
+}
+.grid-container-4 .line{
+    display: flex;
+}
+.grid-container-4 .line i{
+    color: wheat;
+    font-size: 18px;
+}
+.grid-container-4 .line h1{
+    color: wheat;
+    padding-bottom: 1rem;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-left: .6rem;
+}
+.grid-container-4 .line p{
+    color: wheat;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-left: .6rem;
+}
+footer{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #d4caca;
+    background: #292626;
+    padding: 2rem;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .intro-container .row{
+        display: block;
+    }
+    .intro-container .info{
+        text-align: center;
+    }
+}
